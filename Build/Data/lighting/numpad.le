@@ -1,0 +1,60 @@
+{
+    "LeType":"simple",
+    "LeCate":870,
+    "Frames":[
+        {
+            "Count":1,
+            "Name":"frame0",
+            "Data":{
+
+                "68":"0xffffff",
+
+                "51":"0xffffff",
+                "52":"0xffffff",
+                "53":"0xffffff",
+                "73":"0xffffff",
+                "74":"0xffffff",
+                "75":"0xffffff",
+                "96":"0xffffff",
+                "97":"0xffffff",
+                "98":"0xffffff",
+
+                 
+                "76":"0xffffff",
+                "99":"0xffffff"
+            }
+        }
+    ],
+    "LEConfigs":[
+        {
+            "description": "0 through 9 in u through .",
+            "Keys":[
+                51, 52, 53,
+                73, 74, 75,
+                96, 97, 98
+            ],
+            "Color":"0x800080",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "semicolon(,), slash(.)",
+            "Keys":[
+                76,
+                99
+            ],
+            "Color":"0xFF0000",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "backslash for layer 2(vimlike)",
+            "Keys":[
+                68
+            ],
+            "Color":"0x0000FF",
+            "Type":0,
+            "Count":1
+        }
+    ]
+}
