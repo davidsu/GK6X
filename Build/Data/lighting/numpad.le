@@ -8,6 +8,7 @@
             "Data":{
 
                 "68":"0xffffff",
+                "69":"0xffffff",
 
                 "51":"0xffffff",
                 "52":"0xffffff",
@@ -48,11 +49,17 @@
             "Count":1
         },
         {
-            "description": "backslash for layer 2(vimlike)",
+            "description": "s for layer 2(vimlike layer), d for base layer",
+            "Keys":[ 68, 69 ],
+            "Color":"0x020020",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "h for base layer",
             "Keys":[
-                68
             ],
-            "Color":"0x0000FF",
+            "Color":"0x020020",
             "Type":0,
             "Count":1
         }

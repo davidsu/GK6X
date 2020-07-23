@@ -8,6 +8,7 @@
             "Data":{
 
                 "68":"0xffffff",
+                "69":"0xffffff",
 
                 "31":"0xffffff",
                 "32":"0xffffff",
@@ -30,11 +31,12 @@
     ],
     "LEConfigs":[
         {
-            "description": "s for layer 3(numpad)",
+            "description": "s for layer 3(numpad), d for baseLayer",
             "Keys":[
-                68
+                68,
+                69
             ],
-            "Color":"0x0000FF",
+            "Color":"0x020020",
             "Type":0,
             "Count":1
         },
