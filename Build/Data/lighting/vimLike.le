@@ -10,6 +10,7 @@
                 "68":"0xffffff",
                 "69":"0xffffff",
 
+                "30":"0xffffff",
                 "31":"0xffffff",
                 "32":"0xffffff",
 
@@ -25,7 +26,6 @@
                 "73":"0xffffff",
                 "74":"0xffffff",
                 "75":"0xffffff",
-                "76":"0xffffff"
             }
         }
     ],
@@ -43,6 +43,7 @@
         {
             "description": "9 and 0",
             "Keys":[
+                30,
                 31,
                 32
             ],
@@ -71,9 +72,8 @@
             "Count":1
         },
         {
-            "description": "backspace, semicolon",
+            "description": "backspace",
             "Keys":[
-                76,
                 36
             ],
             "Color":"0xFF0000",

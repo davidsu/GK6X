@@ -60,6 +60,9 @@ M:Home
 Comma:End
 
 [Layer2]
+D8:VolumeMute
+
+[Layer2]
 D9:VolumeDown
 
 [Layer2]
@@ -67,9 +70,6 @@ D0:VolumeUp
 
 [Layer2]
 Backspace:Delete
-
-[Layer2]
-Semicolon:Delete
 
 [Layer2]
 S:TempSwitchLayer3
@@ -238,9 +238,6 @@ D6:Disabled
 
 [Layer2]
 D7:Disabled
-
-[Layer2]
-D8:Disabled
 
 [Layer2]
 OpenSquareBrace:Disabled
