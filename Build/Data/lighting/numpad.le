@@ -16,6 +16,7 @@
                 "73":"0xffffff",
                 "74":"0xffffff",
                 "75":"0xffffff",
+                "95":"0xffffff",
                 "96":"0xffffff",
                 "97":"0xffffff",
                 "98":"0xffffff",
@@ -28,13 +29,22 @@
     ],
     "LEConfigs":[
         {
-            "description": "0 through 9 in u through .",
+            "description": "1 through 9 in u through .",
             "Keys":[
                 51, 52, 53,
                 73, 74, 75,
                 96, 97, 98
             ],
             "Color":"0x800080",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "number 0",
+            "Keys":[
+                95
+            ],
+            "Color":"0x00ff00",
             "Type":0,
             "Count":1
         },
