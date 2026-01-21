@@ -1,4 +1,72 @@
-# GK6X
+# GK6X - Personal Fork
+
+## My Setup & Usage
+
+This is my personal fork configured for my **SK61** keyboard on macOS.
+
+### Quick Start
+
+```bash
+# Navigate to the Build directory
+cd Build
+
+# install mono if you haven't already
+brew install mono
+
+# Connect your SK61 keyboard via USB
+
+# Run the program
+mono GK6X.exe
+
+# Apply your configuration
+map
+
+# Exit
+exit
+```
+
+### My Configuration
+
+**Keyboard Model**: 655491117 (SK61)
+
+**Key Features**:
+
+- **Mac keyboard swap**: Alt ↔ Command (for proper Mac key behavior)
+- **CapsLock → Left Control**: Remapped at hardware level (combined with Karabiner for tap-hold behavior)
+- **Layer 2 (Vim mode)**: Hold Left Control (CapsLock) to activate
+  - `hjkl` → Arrow keys
+  - `u/i` → PageUp/PageDown
+  - `m/,` → Home/End
+  - `8/9/0` → Mute/Volume Down/Volume Up
+  - `s` → Switch to Layer 3 (numpad)
+  - `d` → Return to base layer
+- **Layer 3 (Numpad)**: Activated via CapsLock+S
+  - Right side becomes numpad: `uio`=789, `jkl`=456, `m,.`=123, `n`=0
+  - `;/` → `,` and `.` (for decimals)
+
+**Lighting**:
+
+- Base layer: Light purple (white with blue tint)
+- Layer 2: Vim-style highlights (hjkl purple, ui orange, m/comma green)
+- Layer 3: Numpad keys highlighted in purple
+
+### Files
+
+- **Configuration**: `Build/UserData/655491117.txt`
+- **Lighting**: `Build/Data/lighting/{baseLayer,vimLike,numpad,arrows}.le`
+- **Executable**: `Build/GK6X.exe` (compiled from source)
+
+### Notes
+
+- Configuration is stored **on the keyboard** after running `map` - works on any computer
+- Must run from `Build/` directory (requires `Data/` subdirectory)
+- Changes require running `map` command to apply
+
+---
+
+# Original README
+
+## GK6X
 
 This is a command-line tool for mapping keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software ([Windows](http://www.jikedingzhi.com/downloadlist?driverID=41) / [Mac](http://www.jikedingzhi.com/downloadlist?driverID=90)).
 
@@ -16,6 +84,7 @@ See the [releases](https://github.com/pixeltris/GK6X/releases) page for prebuilt
 .NET Framework 4+ is required (should be pre-installed on Windows 7 and higher).
 
 To compile from source you have two options:
+
 - Run `GK6X/GK6X.bat`
 - Compile using Visual Studio (C# tools required)
 
@@ -25,7 +94,7 @@ To compile from source you have two options:
 
 Compiling may take several attempts depending on the version of mono. Try `xbuild GK6X.sln`, or `msbuild GK6X.sln`, or `xbuild /p:TargetFrameworkVersion=v4.5 /p:TargetFrameworkProfile=""`, or ask for help in [#4](https://github.com/pixeltris/GK6X/issues/4).
 
-`cd` into `Build` and run with `sudo mono GK6X.exe`. Super user (`sudo`) is required on Linux ([possible hidraw issue]( https://github.com/pixeltris/GK6X/issues/3)). Or use the udev rule below.
+`cd` into `Build` and run with `sudo mono GK6X.exe`. Super user (`sudo`) is required on Linux ([possible hidraw issue](https://github.com/pixeltris/GK6X/issues/3)). Or use the udev rule below.
 
 ### Linux AUR package
 
@@ -46,6 +115,7 @@ Then add yourself to `plugdev` and reboot for it to take effect:
 ```sh
 sudo adduser $(whoami) plugdev
 ```
+
 </details>
 
 ## Overview
@@ -56,7 +126,7 @@ Once the program is opened you should see something like:
 
 At this point you can start using mapping your keyboard with the `map` command as seen below.
 
-*If you don't see any output, it has failed to detect the keyboard. There isn't any console output until it finds a valid keyboard.*
+_If you don't see any output, it has failed to detect the keyboard. There isn't any console output until it finds a valid keyboard._
 
 ## Commands
 
@@ -74,7 +144,7 @@ Resets the keyboard to the default config. The dedicated reset keyboard key comb
 
 Starts the GUI web server on http://localhost:6464 (requires the GUI build from the [releases](https://github.com/pixeltris/GK6X/releases) page).
 
-*If you're running from source you'll need to copy the `driver` folder from a release build. For updating the GUI files see [updating.txt](/Build/Data/Updating.txt).*
+_If you're running from source you'll need to copy the `driver` folder from a release build. For updating the GUI files see [updating.txt](/Build/Data/Updating.txt)._
 
 ### `gui_le`
 

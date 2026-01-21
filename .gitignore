@@ -7,8 +7,11 @@
 /Build/UserData/*
 !/Build/UserData/Sample.txt
 !/Build/UserData/65*
-/Build/*.exe
+# Commented out to allow committing GK6X.exe
+#/Build/*.exe
 /Build/*.pdb
+# Keep HidSharp.dll - it's needed to run
+!/Build/HidSharp.dll
 /Build/*.dll
 /Build/*.xml
 /Build/KbLog.txt
