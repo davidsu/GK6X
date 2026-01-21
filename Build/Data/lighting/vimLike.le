@@ -1,0 +1,96 @@
+{
+    "LeType":"simple",
+    "LeCate":870,
+    "Frames":[
+        {
+            "Count":1,
+            "Name":"frame0",
+            "Data":{
+
+                "68":"0xffffff",
+                "69":"0xffffff",
+
+                "30":"0xffffff",
+                "31":"0xffffff",
+                "32":"0xffffff",
+
+                "51":"0xffffff",
+                "52":"0xffffff",
+
+                "36":"0xffffff",
+
+                "96":"0xffffff",
+                "97":"0xffffff",
+
+                "72":"0xffffff",
+                "73":"0xffffff",
+                "74":"0xffffff",
+                "75":"0xffffff",
+            }
+        }
+    ],
+    "LEConfigs":[
+        {
+            "description": "s for layer 3(numpad), d for baseLayer",
+            "Keys":[
+                68,
+                69
+            ],
+            "Color":"0x020020",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "9 and 0",
+            "Keys":[
+                30,
+                31,
+                32
+            ],
+            "Color":"0xFFFFFF",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "u and i",
+            "Keys":[
+                51,
+                52
+            ],
+            "Color":"0xFFA500",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "m and comma",
+            "Keys":[
+                96,
+                97
+            ],
+            "Color":"0x00FF00",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "backspace",
+            "Keys":[
+                36
+            ],
+            "Color":"0xFF0000",
+            "Type":0,
+            "Count":1
+        },
+        {
+            "description": "hjkl",
+            "Keys":[
+                72,
+                73,
+                74,
+                75
+            ],
+            "Color":"0x800080",
+            "Type":0,
+            "Count":1
+        }
+    ]
+}
